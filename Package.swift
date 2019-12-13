@@ -11,7 +11,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/vapor/fluent-kit.git", from: "1.0.0-beta.2"),
-        .package(url: "https://github.com/vapor/vapor.git", from: "4.0.0-beta.2"),
+        .package(url: "https://github.com/michaelschlicker/vapor.git", from: .branch("feature/http-2-only")),
     ],
     targets: [
         .target(name: "Fluent", dependencies: ["FluentKit", "Vapor"]),
